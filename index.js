@@ -13,7 +13,7 @@ function addToCart(item) {
  var itemObj = {
    itemName: itemPrice
  };
- cart.push(item)
+ cart.push(itemObj)
 }
 
 function viewCart() {
