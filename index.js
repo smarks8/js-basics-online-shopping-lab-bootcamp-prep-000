@@ -27,8 +27,9 @@ function viewCart() {
   var result = `In your cart, you have `;
   
   for(var i =0; i<cart.length;i++){
+    
     var currentKey = Object.keys(cart[i]);
-    var currentPrice = currentObj[currentKey];
+    var currentPrice = cart[i][currentKey];
     
     result += `${currentKey} at $${currentPrice}`
     
