@@ -31,9 +31,6 @@ function viewCart() {
   
   var result = 'In your cart, you have ';
   
-  for(var i = 0; i < cart.length; i++){
-    result += cart[i][]
-  }
 }
 
 function total() {
