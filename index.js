@@ -27,16 +27,16 @@ function viewCart() {
   
   var result = 'In your cart, you have ';
   
-  for(var i =0; i<arr.length;i++){
-    var currentObj = arr[i];
-    var currentKey = Object.keys(arr[i]);
+  for(var i =0; i<cart.length;i++){
+    var currentObj = cart[i];
+    var currentKey = Object.keys(cart[i]);
     var currentPrice = currentObj[currentKey];
     
     result += `${currentKey} at ${currentPrice}`
     
-    if(i === arr.length-1){
+    if(i === cart.length-1){
       result += '.'
-    } else if(i === arr.length-2){
+    } else if(i === cart.length-2){
       result += ' and '
     } else {
       result += ', '
