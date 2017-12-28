@@ -60,7 +60,9 @@ function total() {
 }
 
 function removeFromCart(item) {
-  if()
+  if(!cart.hasOwnProperty(item)){
+    console.log()
+  }
 }
 
 function placeOrder(cardNumber) {
