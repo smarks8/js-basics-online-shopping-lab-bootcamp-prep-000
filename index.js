@@ -25,7 +25,7 @@ function viewCart() {
     console.log('Your shopping cart is empty.')
   }
   
-  var result = 'In your cart, you have ';
+  var result = `In your cart, you have `;
   
   for(var i =0; i<cart.length;i++){
     var currentObj = cart[i];
@@ -35,7 +35,7 @@ function viewCart() {
     result += `${currentKey} at ${currentPrice}`
     
     if(i === cart.length-1){
-      result += '.'
+      result += `.`
     }
   }
   console.log(result);
