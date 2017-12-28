@@ -38,7 +38,7 @@ function viewCart() {
       result += '.'
     }
   }
-  return result;
+  console.log(result);
 }
 
 function total() {
