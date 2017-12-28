@@ -32,11 +32,8 @@ function viewCart() {
     var currentKey = Object.keys(cart[i]);
     var currentPrice = currentObj[currentKey];
     
-    result += `${currentKey} at ${currentPrice}`
+    result += `${currentKey} at ${currentPrice}.`
     
-    if(i === cart.length-1){
-      result += `.`
-    }
   }
   console.log(result);
 }
