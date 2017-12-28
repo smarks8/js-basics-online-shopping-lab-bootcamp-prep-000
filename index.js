@@ -25,17 +25,18 @@ function viewCart() {
     console.log('Your shopping cart is empty.')
   }
   
-  var result = `In your cart, you have `;
+  var result = 'In your cart, you have ';
   
   for(var i =0; i<cart.length;i++){
     var currentObj = cart[i];
     var currentKey = Object.keys(cart[i]);
     var currentPrice = currentObj[currentKey];
     
-    result += `${currentKey} at ${currentPrice}.`
+    result += `${currentKey} at ${currentPrice}`
+    
     
   }
-  console.log(result);
+  return result;
 }
 
 function total() {
