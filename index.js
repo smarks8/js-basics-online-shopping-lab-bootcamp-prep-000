@@ -27,6 +27,22 @@ function viewCart() {
   
   var result = 'In your cart, you have ';
   
+  for(var i =0; i<arr.length;i++){
+    var currentObj = arr[i];
+    var currentKey = Object.keys(arr[i]);
+    var currentPrice = currentObj[currentKey];
+    
+    result += `${currentKey} at ${currentPrice}`
+    
+    if(i === arr.length-1){
+      result += '.'
+    } else if(i === arr.length-2){
+      result += ' and '
+    } else {
+      result += ', '
+    }
+  }
+  return result;
 }
 
 function total() {
