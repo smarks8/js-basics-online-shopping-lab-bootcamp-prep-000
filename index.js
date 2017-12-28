@@ -24,10 +24,9 @@ function viewCart() {
   if(!cart.length){
     console.log('Your shopping cart is empty.')
   }
-    var result = `In your cart, you have `;
+  var result = `In your cart, you have `;
   
   for(var i =0; i<cart.length;i++){
-    var currentObj = cart[i];
     var currentKey = Object.keys(cart[i]);
     var currentPrice = currentObj[currentKey];
     
@@ -42,7 +41,6 @@ function viewCart() {
     } else {
       result += ', '
     }
-    
   }
   console.log(result);
 }
@@ -60,7 +58,6 @@ function total() {
 }
 
 function removeFromCart(item) {
-  
   for(var i =0; i<cart.length;i++){
     if(cart[i].hasOwnProperty(item)){
       cart.splice(i,1)
