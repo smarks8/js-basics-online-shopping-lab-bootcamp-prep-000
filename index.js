@@ -24,19 +24,6 @@ function viewCart() {
   if(!cart.length){
     console.log('Your shopping cart is empty.')
   }
-  
-  var result = 'In your cart, you have ';
-  
-  for(var i =0; i<cart.length;i++){
-    var currentObj = cart[i];
-    var currentKey = Object.keys(cart[i]);
-    var currentPrice = currentObj[currentKey];
-    
-    result += `${currentKey} at ${currentPrice}`
-    
-    
-  }
-  return result;
 }
 
 function total() {
